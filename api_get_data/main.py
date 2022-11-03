@@ -20,6 +20,6 @@ urls = [
 ]
 if __name__ == '__main__':
     directory = "../data/"
-    get_data(f"{directory}{urls[0][0]}", urls[0][1], urls[0][2], urls[0][3])
-    # for url in urls:
-    #     get_data(f"{directory}{url[0]}", url[1], url[2], url[3])
+    # get_data(f"{directory}{urls[0][0]}", urls[0][1], urls[0][2], urls[0][3])
+    for url in urls:
+        get_data(f"{directory}{url[0]}", url[1], url[2], url[3])
