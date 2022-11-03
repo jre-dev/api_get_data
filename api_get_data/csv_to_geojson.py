@@ -45,9 +45,9 @@ def convert_numpy(val):
         return int(val)
 
 
-CSV_URL = "https://chargepoints.dft.gov.uk/api/retrieve/registry/format/csv/"
-r = requests.get(CSV_URL, allow_redirects=True)
-open('data.csv', 'wb').write(r.content)
 
 if __name__ == "_-main__":
+    CSV_URL = "https://chargepoints.dft.gov.uk/api/retrieve/registry/format/csv/"
+    r = requests.get(CSV_URL, allow_redirects=True)
+    open('data.csv', 'wb').write(r.content)
     create_geojson("data.csv", "test.geojson")
