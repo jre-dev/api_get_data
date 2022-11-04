@@ -1,10 +1,11 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python
 
+from setuptools import setup, find_packages
 from src.main import __version__
 
 setup(
-    name='API_get_data',
+    name='api_get_data',
     version=__version__,
-    author='J K R',
+    author='Jonathan Reinhardt',
     packages=find_packages(),
 )

@@ -1,4 +1,4 @@
-__version__ = 'dev'
+__version__ = '0.1.0'
 
 from src.get_data import get_data
 import json
