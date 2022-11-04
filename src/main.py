@@ -1,6 +1,6 @@
 __version__ = 'dev'
 
-from api_get_data.get_data import get_data
+from src.get_data import get_data
 import json
 # websites = {
 #     'germany': {
@@ -12,9 +12,10 @@ import json
 if __name__ == '__main__':
     with open("../data/urls.json", 'r', encoding='utf-8') as f:
         urls = json.load(f)
+        print(type(urls))
         print(urls)
-    # directory = "../data/"
-    # get_data(f"{directory}{urls[0][0]}", urls[0][1], urls[0][2], urls[0][3])
-    # for url in urls:
-    #     get_data(f"{directory}{url[0]}", url[1], url[2], url[3])
+        directory = "../data/"
+
+        for url in urls:
+            get_data(f"{directory}{urls[url][0]}", urls[url][1], urls[url][2], urls[url][3])
 

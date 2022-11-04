@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-from api_get_data.main import __version__
+from src.main import __version__
 
 setup(
     name='API_get_data',

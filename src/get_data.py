@@ -3,7 +3,7 @@ import os
 import geojson
 import requests
 
-from csv_to_geojson import create_geojson
+from src.csv_to_geojson import create_geojson
 
 
 def get_data(file_name: str, url: str, csv=False, offset=None):
