@@ -8,6 +8,7 @@ requests = "*"
 geojson = "*"
 pandas = "*"
 numpy = "*"
+os = "*"
 
 [dev-packages]
 
