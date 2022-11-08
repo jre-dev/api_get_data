@@ -6,13 +6,13 @@ import requests
 from src.csv_to_geojson import create_geojson
 
 
-def get_data(file_name: str, url: str, csv=False, offset=None):
+def get_data(file_name: str, url: str, csv: bool = False, offset: int = None) :
     """
-
-    :param csv:
-    :param offset:
-    :param url:
-    :param file_name:
+    This function calls a given API and stores the responding data as geojson.
+    :param file_name: name of the output file
+    :param url: url for the api response of the json or csv data.
+    :param csv: a bool wich has to be true if the api response data is of csv type.
+    :param offset: a possible offset for "resultOffset="
     """
     attribute_error_message = "Attribute Error"
 
